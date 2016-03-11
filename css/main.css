@@ -102,8 +102,6 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -154,8 +152,6 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -165,8 +161,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -197,14 +191,10 @@ th {
   padding: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -261,7 +251,6 @@ img {
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -979,50 +968,16 @@ hr {
 .embed-responsive-4by3 {
   padding-bottom: 75%; }
 
-/* font-family: "RobotoRegular"; */
 @font-face {
-  font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-/* font-family: "RobotoLight"; */
-@font-face {
-  font-family: "RobotoLight";
-  src: url("../fonts/RobotoLight/RobotoLight.eot");
-  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-/* font-family: "RobotoMedium"; */
-@font-face {
-  font-family: "RobotoMedium";
-  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
-  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-/* font-family: "RobotoBold"; */
-@font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-family: 'CaviarDreams';
+  src: url("../fonts/CaviarDreams/CaviarDreams.eot");
+  src: url("../fonts/CaviarDreams/CaviarDreams.eot?#iefix") format("embedded-opentype"), url("../fonts/CaviarDreams/CaviarDreams.woff") format("woff"), url("../fonts/CaviarDreams/CaviarDreams.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'BebasRegular';
-  src: url("../fonts/BebasRegular/BebasRegular.eot");
-  src: url("../fonts/BebasRegular/BebasRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasRegular/BebasRegular.woff") format("woff"), url("../fonts/BebasRegular/BebasRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: 'BebasBold';
-  src: url("../fonts/BebasBold/BebasBold.eot");
-  src: url("../fonts/BebasBold/BebasBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasBold/BebasBold.woff") format("woff"), url("../fonts/BebasBold/BebasBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: 'RobotoCondensedRegular';
-  src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot");
-  src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+  font-family: 'ClearSans';
+  src: url("../fonts/ClearSans/ClearSans-Thin.eot");
+  src: url("../fonts/ClearSans/ClearSans-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans/ClearSans-Thin.woff") format("woff"), url("../fonts/ClearSans/ClearSans-Thin.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 html, body, div, span, applet, object, iframe,
@@ -1074,52 +1029,214 @@ a, a:focus, a:active, a:hover, a:visited {
 
 /* size */
 /* header*/
+/*content*/
+/* about*/
+/*footer*/
+/*fonts*/
+/*link*/
+/*other*/
 /* color */
 #header {
-  width: 100%;
-  height: 103px;
+  font-family: "CaviarDreams";
   background-color: #333333;
   color: #fff; }
+  #header a {
+    color: #fff; }
+
+#content {
+  font-family: "ClearSans"; }
+
+h2 {
+  font-family: "CaviarDreams"; }
+
+section {
+  font-family: "ClearSans"; }
+
+.content_about_cloth {
+  background-color: rgba(51, 51, 51, 0.7); }
+
+.content_services {
+  color: #333333; }
+
+.content_contacts {
+  background-color: #333333;
+  color: #fff; }
+
+.content_services_cat_inside ul:before {
+  border-color: #333333; }
+
+.content_contacts_cloth {
+  background-color: rgba(51, 51, 51, 0.7); }
+
+#footer {
+  font-family: "CaviarDreams";
+  background-color: #333333;
+  color: #fff; }
+
+#header {
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: fixed;
+  z-index: 100;
+  width: 100%; }
+  #header div {
+    line-height: 80px;
+    text-align: center; }
   #header .header_site_name {
-    width: 40%;
-    height: 100%;
-    float: left;
-    text-align: center;
-    position: relative; }
+    -webkit-flex-basis: 200px;
+        -ms-flex-preferred-size: 200px;
+            flex-basis: 200px; }
     #header .header_site_name h1 {
+      height: 100%; }
+  #header .header_menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #header .header_menu ul li {
+      line-height: 80px; }
+      #header .header_menu ul li a {
+        padding: 5px 0;
+        margin: 0 10px;
+        -webkit-transition: all .25s;
+                transition: all .25s;
+        border-bottom: transparent 1px solid; }
+        #header .header_menu ul li a:hover {
+          -webkit-transition: all .25s;
+                  transition: all .25s;
+          border-bottom: 1px solid #fff; }
+  #header .header_number address {
+    display: inline;
+    width: 200px; }
+
+#content {
+  font-family: "CaviarDreams";
+  color: #fff; }
+  #content section {
+    min-height: 768px; }
+    #content section h2 {
+      padding: 100px 0;
+      text-transform: uppercase; }
+  #content .content_about {
+    background-image: url("../img/room_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; }
+    #content .content_about .content_about_cloth {
       position: absolute;
-      top: 40%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      text-transform: uppercase;
-      font-size: 20px; }
-  #header .header_menu {
-    width: 40%;
-    float: left; }
-    #header .header_menu ul {
-      display: table;
-      height: 103px; }
-      #header .header_menu ul li {
-        float: left;
-        height: 100%;
-        line-height: 103px;
-        text-transform: uppercase;
-        font-size: 20px; }
-        #header .header_menu ul li a {
-          display: block;
-          padding: 0 20px; }
-          #header .header_menu ul li a:hover {
-            background-color: #4d4d4d;
-            transition: all 0.5s; }
-  #header .header_number {
-    width: 20%;
-    height: 103px;
-    float: left; }
-    #header .header_number address {
-      display: inline-block;
-      line-height: 103px;
-      text-transform: uppercase;
-      font-size: 20px; }
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #content .content_about .content_about_cloth .content_about_cloth_centered {
+        position: relative;
+        top: -30px;
+        text-align: center; }
+        #content .content_about .content_about_cloth .content_about_cloth_centered h2 {
+          text-transform: uppercase;
+          font-size: 35px;
+          padding: 30px 0; }
+        #content .content_about .content_about_cloth .content_about_cloth_centered p {
+          font-family: "ClearSans";
+          font-size: 24px; }
+  #content .content_services {
+    width: 100%; }
+    #content .content_services h2 {
+      text-align: center;
+      font-size: 35px; }
+    #content .content_services .content_services_cat {
+      text-align: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      #content .content_services .content_services_cat .content_services_cat_inside_wrap {
+        width: 30%; }
+        #content .content_services .content_services_cat .content_services_cat_inside_wrap .content_services_cat_inside ul {
+          position: relative; }
+          #content .content_services .content_services_cat .content_services_cat_inside_wrap .content_services_cat_inside ul:before {
+            content: '';
+            width: 0;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            border: 1px solid; }
+      #content .content_services .content_services_cat h3 {
+        font-size: 29.16667px;
+        margin: 20px 0;
+        text-transform: uppercase; }
+      #content .content_services .content_services_cat ul {
+        margin-top: 60px; }
+        #content .content_services .content_services_cat ul li {
+          padding: 10px 0;
+          font-size: 23.33333px; }
+  #content .content_contacts {
+    background-image: url("../img/room_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; }
+    #content .content_contacts .content_contacts_cloth {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    #content .content_contacts h2 {
+      text-align: center;
+      font-size: 35px; }
+
+#footer {
+  height: 300px; }
 
 /*# sourceMappingURL=main.css.map */

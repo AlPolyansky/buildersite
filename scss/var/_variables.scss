@@ -2,10 +2,31 @@
 $totalWidht : 100;
 
 	/* header*/
-	$headerHeight: 103;
+	$headerHeight: 80px;
+	$headerFontSize: 18px;
+	$headerKerning: 1px;
 
-/* color */
+	/*content*/
+		$sectionHeight : 768px;
+		/* about*/
+		$sectionFontSizeH2: 35px;
+		$sectionFontSizeP: 24px;
 
-$mainColor : #333333;
-$extraColor : #575252;
-$bgColor: #fff;
+	/*footer*/
+		$footerHeight : 300px;
+
+
+
+
+/*fonts*/
+$mainFont : "CaviarDreams";
+$extraFont: "ClearSans";
+
+/*link*/
+$urlImg : "../img/";
+
+
+/*other*/
+
+$aboutOpacity: 0.7;
+

@@ -3,5 +3,10 @@
 @import "base/reset";
 
 @import "var/variables";
+@import "mixins/mixins";
+@import "skins/default";
 
 @import "grid/head";
+@import "grid/content";
+@import "grid/footer";
+

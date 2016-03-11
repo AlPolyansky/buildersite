@@ -1,0 +1,57 @@
+/* color */
+
+$mainColor : #333333;
+$extraColor : #575252;
+$bgColor: #fff;
+
+
+#header{
+	font-family: $mainFont;
+	background-color: $mainColor;
+	color: $bgColor;
+	a{
+		color: $bgColor;
+	}
+}
+
+#content{
+	font-family: $extraFont;
+}
+
+h2{
+	font-family: $mainFont;
+}
+
+section{
+	font-family: $extraFont;
+}
+
+.content_about_cloth{
+	background-color: rgba($mainColor, $aboutOpacity);
+}
+
+.content_services{
+	color: $mainColor;
+}
+
+.content_contacts{
+	background-color: $mainColor;
+	color: $bgColor;
+}
+
+.content_services_cat_inside ul:before{
+	border-color: $mainColor;
+}
+
+.content_contacts_cloth{
+	background-color: rgba($mainColor, $aboutOpacity);
+}
+
+#footer{
+	font-family: $mainFont;
+	background-color: $mainColor;
+	color: $bgColor;
+}
+
+
+
