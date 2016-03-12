@@ -9,11 +9,11 @@
 		}
 	}
 	.content_about{
-		@include img("room_1.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		position: relative;
+		z-index: 2;
 		.content_about_cloth{
 			position: absolute;
 			width: 100%;
@@ -53,23 +53,6 @@
 			flex-wrap:wrap;
 			.content_services_cat_inside_wrap{
 				width: 30%;
-				.content_services_cat_inside ul{
-					position: relative;
-					&:before{
-						content: '';
-						width: 0;
-						height: 100%;
-						position: absolute;
-						right: 0;
-						border: 1px solid;
-					}
-				}
-
-			}
-			h3{
-				font-size: $sectionFontSizeH2 / 1.2;
-				margin: 20px 0;
-				text-transform: uppercase;
 			}
 			ul{
 				margin-top: 60px;
@@ -81,11 +64,11 @@
 		}
 	}
 	.content_contacts{
-		@include img("room_2.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		position: relative;
+		z-index: 2;
 		.content_contacts_cloth{
 			position: absolute;
 			width: 100%;
@@ -95,5 +78,117 @@
 			text-align: center;
 			font-size: $sectionFontSizeH2;
 		}
+		h3{
+			margin-bottom: 80px; 
+		}
+		.content_contacts_wrap{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 80%;
+			height: 50%;
+			margin: 0 auto;
+			
+			.content_contacts_culc,.content_contacts_form{
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				margin: auto;
+			}
+
+			.culc_form{
+				text-transform: uppercase;
+				display: inline-block;
+				background-color: $bgColor;
+				color: $mainColor;
+				padding: 10px;
+				border-radius: 25px;
+				width: 300px;
+				text-align:left;
+				position: relative;
+				.culc_name{
+					padding-left:20px;
+				}
+				.culc_button{
+					cursor: pointer;
+					position: absolute;
+					right: 12px;
+					width: 0;
+					height: 0;
+					border-left: 8px solid transparent;
+					border-right: 8px solid transparent;
+					border-top: 16px solid;
+				}
+				
+			}
+			.culc_result,.culc_info{
+				top: 40px;
+				position: relative;
+				right: 50px;
+				font-size: 22px;
+				}
+			.culc_info{
+				top: 100px;
+				right: -20px;
+			}
+			.contacts_form_wrap{
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				width: 300px;
+				input,textarea{
+					padding-left: 20px;
+					border-radius: 25px;
+					border: none;
+					height: 36px;
+					margin-bottom: 25px;
+					&:focus{
+    					outline: none;
+					}
+				}
+				textarea{
+					height: 150px;
+					padding-top: 20px;
+					resize: none;
+				}
+				button{
+					padding: 3px;
+					text-transform: uppercase;
+					border: 1px solid #fff;
+					border-radius: 10px;
+					width: 120px;
+					margin: 0 auto;
+					height: 25px;
+					box-sizing: content-box;
+					transition: 0.1s;
+					&:focus{
+						outline: none;
+					}
+					&:hover{
+						background-color:$mainColor;
+					}
+
+				}
+			}
+		}
 	}
+	h3{
+		font-size: $sectionFontSizeH2 / 1.2;
+		margin: 20px 0;
+		text-transform: uppercase;
+
+		}
+}
+
+
+.content_services_cat_inside ul,.content_contacts_culc{
+	position: relative;
+	&:before{
+		content: '';
+		width: 0;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		border: 1px solid;
+		}
 }

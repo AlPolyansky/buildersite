@@ -1,7 +1,6 @@
 /* color */
 
 $mainColor : #333333;
-$extraColor : #575252;
 $bgColor: #fff;
 
 
@@ -27,7 +26,7 @@ section{
 }
 
 .content_about_cloth{
-	background-color: rgba($mainColor, $aboutOpacity);
+	background-color: rgba($mainColor, $Opacity);
 }
 
 .content_services{
@@ -35,7 +34,6 @@ section{
 }
 
 .content_contacts{
-	background-color: $mainColor;
 	color: $bgColor;
 }
 
@@ -43,8 +41,22 @@ section{
 	border-color: $mainColor;
 }
 
+.content_contacts_culc:before{
+	border-color: $bgColor;
+}
+
 .content_contacts_cloth{
-	background-color: rgba($mainColor, $aboutOpacity);
+	background-color: rgba($mainColor, $Opacity);
+}
+
+input,textarea{
+	color: darken($mainColor,20%);
+}
+button{
+	background-color: lighten($mainColor,10%);
+	&:hover{
+		background-color:$mainColor;
+	}
 }
 
 #footer{

@@ -1,3 +1,31 @@
 #footer{
 	height: $footerHeight;
+	display:flex;
+	justify-content:space-around;
+	font-size: 20px;
+	
+	li,address, address a{
+		padding: 10px;
+	}
+
+	.footer_menu,.footer_contacts,.footer_social{
+		margin-top: 30px;
+	}
+
+	.footer_contacts{
+		text-align: center;
+
+	}
+
+	.footer_menu{
+		text-align: left;
+	}
+	.footer_social{
+		text-align: right;
+	}
+
+	h4{
+		font-size: 25px;
+		margin-bottom: 50px;
+	}
 }

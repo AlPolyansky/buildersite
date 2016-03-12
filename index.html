@@ -26,7 +26,7 @@
 			</div>
 	</header>
 	<div id="content">
-		<section class="content_about">
+		<section class="content_about" data-parallax="scroll" data-image-src="img/room_1.jpg">
 			<div class="content_about_cloth">
 				<div class="content_about_cloth_centered">
 					<h2>О себе</h2>
@@ -65,13 +65,57 @@
 				</div>
 			</div>
 		</section>
-		<section class="content_contacts">
+		<section class="content_contacts" data-parallax="scroll" data-image-src="img/room_2.jpg">
 			<div class="content_contacts_cloth">
 				<h2>Контакты</h2>
+				<div class="content_contacts_wrap">
+					<div class="content_contacts_culc">
+						<h3>Стоимость услуг</h3>
+						<div class="culc_form">
+							<span class="culc_name">Работа</span>
+							<span class="culc_button"></span>
+						</div>
+						<div class="culc_result">
+							<p>Итого: 12000 руб.</p>
+						</div>
+						<div class="culc_info">
+							<p>*цена указана без учета материалов</p>
+						</div>
+					</div>
+					<div class="content_contacts_form">
+						<h3>Отправьте нам сообщение</h3>
+						<div class="contacts_form_wrap">
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваш e-mail">
+							<textarea placeholder="Ваше сообщение"></textarea>
+							<button>отправить</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>
-	<footer id="footer"></footer>
+	<footer id="footer">
+		<div class="footer_menu">
+			<nav>
+				<ul>
+					<li><a href="#">О себе</a></li>
+					<li><a href="#0">Услуги</a></li>
+					<li><a href="#1">Контакты</a></li>
+					<li><a href="#1">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer_contacts">
+			<h4>Наш телефон</h4>
+			<address>+7 902 199 99 99</address>
+			<address>г.Архангельск</address>
+		</div>
+		<div class="footer_social">
+			<address><a href="#">Вконтакте</a></address>
+			<address><a href="#">Одноклассники</a></address>
+		</div>
+	</footer>
 </div>
 
 
@@ -80,6 +124,7 @@
 
 <script src="libs/jQuery/jquery-2.2.1.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/parallax/parallax.min.js"></script>
 <script src="js/common.js"></script>	
 </body>
 </html>

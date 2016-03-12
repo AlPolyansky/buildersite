@@ -1053,20 +1053,30 @@ section {
   font-family: "ClearSans"; }
 
 .content_about_cloth {
-  background-color: rgba(51, 51, 51, 0.7); }
+  background-color: rgba(51, 51, 51, 0.8); }
 
 .content_services {
   color: #333333; }
 
 .content_contacts {
-  background-color: #333333;
   color: #fff; }
 
 .content_services_cat_inside ul:before {
   border-color: #333333; }
 
+.content_contacts_culc:before {
+  border-color: #fff; }
+
 .content_contacts_cloth {
-  background-color: rgba(51, 51, 51, 0.7); }
+  background-color: rgba(51, 51, 51, 0.8); }
+
+input, textarea {
+  color: black; }
+
+button {
+  background-color: #4d4d4d; }
+  button:hover {
+    background-color: #333333; }
 
 #footer {
   font-family: "CaviarDreams";
@@ -1147,11 +1157,11 @@ section {
       padding: 100px 0;
       text-transform: uppercase; }
   #content .content_about {
-    background-image: url("../img/room_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
     #content .content_about .content_about_cloth {
       position: absolute;
       width: 100%;
@@ -1204,30 +1214,17 @@ section {
               flex-wrap: wrap; }
       #content .content_services .content_services_cat .content_services_cat_inside_wrap {
         width: 30%; }
-        #content .content_services .content_services_cat .content_services_cat_inside_wrap .content_services_cat_inside ul {
-          position: relative; }
-          #content .content_services .content_services_cat .content_services_cat_inside_wrap .content_services_cat_inside ul:before {
-            content: '';
-            width: 0;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            border: 1px solid; }
-      #content .content_services .content_services_cat h3 {
-        font-size: 29.16667px;
-        margin: 20px 0;
-        text-transform: uppercase; }
       #content .content_services .content_services_cat ul {
         margin-top: 60px; }
         #content .content_services .content_services_cat ul li {
           padding: 10px 0;
           font-size: 23.33333px; }
   #content .content_contacts {
-    background-image: url("../img/room_2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
     #content .content_contacts .content_contacts_cloth {
       position: absolute;
       width: 100%;
@@ -1235,8 +1232,135 @@ section {
     #content .content_contacts h2 {
       text-align: center;
       font-size: 35px; }
+    #content .content_contacts h3 {
+      margin-bottom: 80px; }
+    #content .content_contacts .content_contacts_wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 80%;
+      height: 50%;
+      margin: 0 auto; }
+      #content .content_contacts .content_contacts_wrap .content_contacts_culc, #content .content_contacts .content_contacts_wrap .content_contacts_form {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto; }
+      #content .content_contacts .content_contacts_wrap .culc_form {
+        text-transform: uppercase;
+        display: inline-block;
+        background-color: #fff;
+        color: #333333;
+        padding: 10px;
+        border-radius: 25px;
+        width: 300px;
+        text-align: left;
+        position: relative; }
+        #content .content_contacts .content_contacts_wrap .culc_form .culc_name {
+          padding-left: 20px; }
+        #content .content_contacts .content_contacts_wrap .culc_form .culc_button {
+          cursor: pointer;
+          position: absolute;
+          right: 12px;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 16px solid; }
+      #content .content_contacts .content_contacts_wrap .culc_result, #content .content_contacts .content_contacts_wrap .culc_info {
+        top: 40px;
+        position: relative;
+        right: 50px;
+        font-size: 22px; }
+      #content .content_contacts .content_contacts_wrap .culc_info {
+        top: 100px;
+        right: -20px; }
+      #content .content_contacts .content_contacts_wrap .contacts_form_wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0 auto;
+        width: 300px; }
+        #content .content_contacts .content_contacts_wrap .contacts_form_wrap input, #content .content_contacts .content_contacts_wrap .contacts_form_wrap textarea {
+          padding-left: 20px;
+          border-radius: 25px;
+          border: none;
+          height: 36px;
+          margin-bottom: 25px; }
+          #content .content_contacts .content_contacts_wrap .contacts_form_wrap input:focus, #content .content_contacts .content_contacts_wrap .contacts_form_wrap textarea:focus {
+            outline: none; }
+        #content .content_contacts .content_contacts_wrap .contacts_form_wrap textarea {
+          height: 150px;
+          padding-top: 20px;
+          resize: none; }
+        #content .content_contacts .content_contacts_wrap .contacts_form_wrap button {
+          padding: 3px;
+          text-transform: uppercase;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          width: 120px;
+          margin: 0 auto;
+          height: 25px;
+          box-sizing: content-box;
+          -webkit-transition: 0.1s;
+                  transition: 0.1s; }
+          #content .content_contacts .content_contacts_wrap .contacts_form_wrap button:focus {
+            outline: none; }
+          #content .content_contacts .content_contacts_wrap .contacts_form_wrap button:hover {
+            background-color: #333333; }
+  #content h3 {
+    font-size: 29.16667px;
+    margin: 20px 0;
+    text-transform: uppercase; }
+
+.content_services_cat_inside ul, .content_contacts_culc {
+  position: relative; }
+  .content_services_cat_inside ul:before, .content_contacts_culc:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border: 1px solid; }
 
 #footer {
-  height: 300px; }
+  height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  font-size: 20px; }
+  #footer li, #footer address, #footer address a {
+    padding: 10px; }
+  #footer .footer_menu, #footer .footer_contacts, #footer .footer_social {
+    margin-top: 30px; }
+  #footer .footer_contacts {
+    text-align: center; }
+  #footer .footer_menu {
+    text-align: left; }
+  #footer .footer_social {
+    text-align: right; }
+  #footer h4 {
+    font-size: 25px;
+    margin-bottom: 50px; }
 
 /*# sourceMappingURL=main.css.map */
