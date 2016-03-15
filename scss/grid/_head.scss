@@ -6,38 +6,33 @@ body{
 	letter-spacing:$headerKerning;
 	font-size: $headerFontSize;
 	text-transform: uppercase;
-	justify-content:space-around;
 	position: fixed;
 	z-index: 1000;
 	backface-visibility: hidden;
-	display: inline-block;
+	display: table;
 	width: $totalWidht + 0%;
+	height: 80px;
 	
 	
-	div{
-		line-height: $headerHeight;
+	.header_site_name,.header_menu,.header_number,.mobile_button{
 		text-align: center;
-		margin: 0;
-		padding: 0;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
 
 	}
 	.header_site_name{
-		h1{
-			height: 100%;
-		}
+		width: 20%;
 	}
 	.header_menu{
+    	margin: 0 auto;
 		ul{
-			display: flex;
-			flex-direction: row;
-			justify-content:center;
-			align-items: center;
 			li{
+				display: inline-block;
 				.active{
 					transition: all .25s;
 					border-bottom: 1px solid $bgColor;
 				}
-				line-height: $headerHeight;
 				a{
 					padding: 5px 0;
 					margin: 0 10px;
@@ -59,23 +54,45 @@ body{
 		display: none;
 	}
 	.mobile_menu_wrap{
-		display: none;
+		
 	}
 	.header_number{
+		width: 20%;
 		address{
-			height: 20px;
+			margin: 0;
 			
 		}
 		.city{
 			font-size: 14px;
-			height: 0;
-
 		}
 
 	}
 
 }
 
+.table{
+	display: table;
+	width:100%;
+}
 
+.center{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mobile_menu_wrap{
+			width: 100%;
+    		position: absolute;
+		    margin: 0 auto;
+		    background-color: rgba(#333,.95);
+		    text-align: center;
+		    top: 80px;
+		    li{
+		    	padding: 20px;
+		    	a{
+		    		display: block;
+		    	}
+		    }
+		}
 
 

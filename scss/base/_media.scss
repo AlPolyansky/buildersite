@@ -5,16 +5,21 @@
 			display: none;
 		}
 		.mobile_button{
-			display: block;
+			    display: table-cell;
+			    width: 20%;
+			    height: 100%;
+			    vertical-align: middle;
+			    margin: 0 auto;
+			    text-align: center;
 			.button_wrap{
 				background-color: lighten(#333333,60%);
     			height: 40px;
-			    margin: 25px auto 0;
 			    width: 40px;
 			    position: relative;
-			    left: 50px;
 			    border-radius: 50%;
 			    cursor: pointer;
+			    margin: 0 auto;
+
 			    .top_line,.down_line{
 			    	background-color: #333;
     				height: 3px;
@@ -42,21 +47,6 @@
 					transform: rotate(-225deg);
 			    }
 			}
-		}
-		.mobile_menu_wrap{
-			width: 100%;
-    		position: absolute;
-		    margin: 0 auto;
-		    background-color: rgba(#333,.95);
-		    text-align: center;
-		    top: 80px;
-		    display: none;
-		    li{
-		    	padding: 20px;
-		    	a{
-		    		display: block;
-		    	}
-		    }
 		}
 		.header_number{
 			.city{
@@ -91,19 +81,16 @@
 @media only screen and (max-width : 767px) {
 	body #header{
 		font-size: 12px;
-		div{
-			line-height: 40px;
+
+		h1{
+			padding: 20px 0;
 		}
 		.mobile_button .button_wrap{
-			 background-color: #cccccc;
-		    border-radius: 50%;
-		    cursor: pointer;
-		    height: 40px;
-		    left: 50px;
-		    margin: 25px auto;
-		    position: relative;
-		    top: -14px;
-		    width: 40px;
+			    background-color: #cccccc;
+			    border-radius: 50%;
+			    cursor: pointer;
+			    height: 40px;
+			    margin: 0 auto;
 		}
 
 

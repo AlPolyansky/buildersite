@@ -5,6 +5,26 @@
 
 }
 
+.mobile_menu_wrap{
+			text-transform: uppercase;
+			font-family: $mainFont;
+			width: 100%;
+    		position: fixed;
+		    margin: 0 auto;
+		    background-color: rgba(#333,.95);
+		    text-align: center;
+		    top: 80px;
+		    display: none;
+		    z-index: 1000;
+		    li{
+		    	padding: 20px;
+		    	a{
+		    		display: block;
+		    	}
+		    }
+		}
+
+
 
 #content{
 	font-family: "CaviarDreams";

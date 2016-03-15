@@ -4284,16 +4284,20 @@ a, a:focus, a:active, a:hover, a:visited {
     body #header .header_menu {
       display: none; }
     body #header .mobile_button {
-      display: block; }
+      display: table-cell;
+      width: 20%;
+      height: 100%;
+      vertical-align: middle;
+      margin: 0 auto;
+      text-align: center; }
       body #header .mobile_button .button_wrap {
         background-color: #cccccc;
         height: 40px;
-        margin: 25px auto 0;
         width: 40px;
         position: relative;
-        left: 50px;
         border-radius: 50%;
-        cursor: pointer; }
+        cursor: pointer;
+        margin: 0 auto; }
         body #header .mobile_button .button_wrap .top_line, body #header .mobile_button .button_wrap .down_line {
           background-color: #333;
           height: 3px;
@@ -4319,18 +4323,6 @@ a, a:focus, a:active, a:hover, a:visited {
           -webkit-transform: rotate(-225deg);
               -ms-transform: rotate(-225deg);
                   transform: rotate(-225deg); }
-    body #header .mobile_menu_wrap {
-      width: 100%;
-      position: absolute;
-      margin: 0 auto;
-      background-color: rgba(51, 51, 51, 0.95);
-      text-align: center;
-      top: 80px;
-      display: none; }
-      body #header .mobile_menu_wrap li {
-        padding: 20px; }
-        body #header .mobile_menu_wrap li a {
-          display: block; }
     body #header .header_number .city {
       font-size: 12px; }
 
@@ -4352,18 +4344,14 @@ a, a:focus, a:active, a:hover, a:visited {
 @media only screen and (max-width: 767px) {
   body #header {
     font-size: 12px; }
-    body #header div {
-      line-height: 40px; }
+    body #header h1 {
+      padding: 20px 0; }
     body #header .mobile_button .button_wrap {
       background-color: #cccccc;
       border-radius: 50%;
       cursor: pointer;
       height: 40px;
-      left: 50px;
-      margin: 25px auto;
-      position: relative;
-      top: -14px;
-      width: 40px; } }
+      margin: 0 auto; } }
 /* size */
 /* header*/
 /*content*/
@@ -4481,42 +4469,24 @@ body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .cu
   letter-spacing: 1px;
   font-size: 18px;
   text-transform: uppercase;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
   position: fixed;
   z-index: 1000;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  display: inline-block;
-  width: 100%; }
-  #header div {
-    line-height: 80px;
+  display: table;
+  width: 100%;
+  height: 80px; }
+  #header .header_site_name, #header .header_menu, #header .header_number, #header .mobile_button {
     text-align: center;
-    margin: 0;
-    padding: 0; }
-  #header .header_site_name h1 {
+    display: table-cell;
+    vertical-align: middle;
     height: 100%; }
-  #header .header_menu ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+  #header .header_site_name {
+    width: 20%; }
+  #header .header_menu {
+    margin: 0 auto; }
     #header .header_menu ul li {
-      line-height: 80px; }
+      display: inline-block; }
       #header .header_menu ul li .active {
         -webkit-transition: all .25s;
                 transition: all .25s;
@@ -4535,17 +4505,52 @@ body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .cu
           outline: none; }
   #header .mobile_button {
     display: none; }
-  #header .mobile_menu_wrap {
-    display: none; }
-  #header .header_number address {
-    height: 20px; }
-  #header .header_number .city {
-    font-size: 14px;
-    height: 0; }
+  #header .header_number {
+    width: 20%; }
+    #header .header_number address {
+      margin: 0; }
+    #header .header_number .city {
+      font-size: 14px; }
+
+.table {
+  display: table;
+  width: 100%; }
+
+.center {
+  display: table-cell;
+  vertical-align: middle; }
+
+.mobile_menu_wrap {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  background-color: rgba(51, 51, 51, 0.95);
+  text-align: center;
+  top: 80px; }
+  .mobile_menu_wrap li {
+    padding: 20px; }
+    .mobile_menu_wrap li a {
+      display: block; }
 
 .wrapper {
   overflow: hidden;
   box-sizing: border-box; }
+
+.mobile_menu_wrap {
+  text-transform: uppercase;
+  font-family: "CaviarDreams";
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  background-color: rgba(51, 51, 51, 0.95);
+  text-align: center;
+  top: 80px;
+  display: none;
+  z-index: 1000; }
+  .mobile_menu_wrap li {
+    padding: 20px; }
+    .mobile_menu_wrap li a {
+      display: block; }
 
 #content {
   font-family: "CaviarDreams";
