@@ -1,9 +1,14 @@
-@import "base/bootstrap";
 @import "base/fonts";
+@import "base/bootstrap";
 @import "base/reset";
+@import "base/CustomScrollbar.min";
+@import "base/animate";
+@import "base/media";
+
 
 @import "var/variables";
 @import "mixins/mixins";
+@import "base/icons";
 @import "skins/default";
 
 @import "grid/head";

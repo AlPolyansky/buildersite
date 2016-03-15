@@ -1,37 +1,50 @@
+.wrapper{
+	overflow:hidden;
+	box-sizing: border-box;
+
+
+}
+
+
 #content{
 	font-family: "CaviarDreams";
 	color: $bgColor;
 	section{
 		min-height: $sectionHeight;
 		h2{
-			padding: 100px 0;
+			margin: 50px 0;
 			text-transform: uppercase;
 		}
 	}
 	.content_about{
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		position: relative;
-		z-index: 2;
+			background-repeat: no-repeat;
+			background-position: center 0;
+			position: relative;
+			background-size:cover;
+			background-image: url("../img/room_1_1.jpg");
+			z-index: 2;
+			width: 100%;
+			transition:background-position .8s ease-out;
+			background-attachment: fixed;
+
+
 		.content_about_cloth{
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			display: flex;
-   	 		align-items: center;
-    		flex-direction: column;
-    		justify-content: center;
+    		z-index: 100;
+    		display: table;
 			.content_about_cloth_centered{
-				position: relative;
-				top: -30px;
-			 	text-align: center;
+				display: table-cell;
+    			text-align: center;
+    			vertical-align: middle;
 			 	h2{
 			 		text-transform: uppercase;
 			 		font-size: $sectionFontSizeH2;
 			 		padding: 30px 0 ;
 			 	}
 			 	p{
+			 		padding: 0 10%;
 			 		font-family: $extraFont;
 			 		font-size: $sectionFontSizeP;
 			 	}
@@ -40,20 +53,20 @@
 		}
 	}
 	.content_services{
+
 		width: 100%;
 		
 		h2{
 			text-align: center;
 			font-size: $sectionFontSizeH2;
+
 		}
+
 		.content_services_cat{
-			text-align: center;
-			display: flex;
-			justify-content: center;
-			flex-wrap:wrap;
-			.content_services_cat_inside_wrap{
-				width: 30%;
+			.content_services_cat_inside,.content_services_cat_outside{
+				padding: 80px 0;
 			}
+			text-align: center;
 			ul{
 				margin-top: 60px;
 				li{
@@ -62,15 +75,21 @@
 				}
 			}
 		}
+
 	}
 	.content_contacts{
+		background-attachment: fixed;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		position: relative;
+		background-image: url("../img/102H-min-1.jpg");
 		z-index: 2;
+		transition:background-position .7s ease-out;
+		display: table;
+		width: 100%;
 		.content_contacts_cloth{
-			position: absolute;
+			display: table-cell;
 			width: 100%;
 			height: 100%;
 		}
@@ -79,24 +98,17 @@
 			font-size: $sectionFontSizeH2;
 		}
 		h3{
-			margin-bottom: 80px; 
+			margin-bottom: 40px; 
 		}
 		.content_contacts_wrap{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			width: 80%;
-			height: 50%;
-			margin: 0 auto;
-			
+			text-align: center;
 			.content_contacts_culc,.content_contacts_form{
-				width: 100%;
-				height: 100%;
-				text-align: center;
-				margin: auto;
+				
 			}
-
-			.culc_form{
+			.culc_wrap{
+				position: relative;
+				.culc_form{
+				z-index: 4;
 				text-transform: uppercase;
 				display: inline-block;
 				background-color: $bgColor;
@@ -104,44 +116,134 @@
 				padding: 10px;
 				border-radius: 25px;
 				width: 300px;
+				height: 36px;
 				text-align:left;
 				position: relative;
+				transition: 1s;
+				cursor: pointer;
 				.culc_name{
 					padding-left:20px;
 				}
 				.culc_button{
+					display: block;
 					cursor: pointer;
 					position: absolute;
-					right: 12px;
+					display: block;
+					right: 16px;
+					top: 13px;
 					width: 0;
 					height: 0;
-					border-left: 8px solid transparent;
-					border-right: 8px solid transparent;
-					border-top: 16px solid;
+					border-left: 7px solid transparent;
+					border-right: 7px solid transparent;
+					border-top: 14px solid;
+					z-index: 4;
+					transition: 0.5s;
+				}
+			}
+			.culc_menu{
+				background-color: $mainColor;
+				width: 300px;
+				height: 36px;
+				position: absolute;
+				padding: 10px;
+				border-radius: 25px;
+				top: 0;
+				right: 0;
+				left: 0;
+				margin: 0 auto;
+				transition: 1s;
+				z-index: 3;
+				overflow: hidden;
+				
+				.culc_job_wrap{
+					margin-top: 27px;
+					height: 200px;
+					padding: 5px;
+					margin-bottom: 20px;
+					.culc_job{
+						margin-bottom: 10px;
+						padding: 10px 0;
+						text-align:left;
+						p,span{
+							display: inline-block;
+						}
+						p{
+							max-width: 50%;
+							overflow-wrap: break-word;
+						}
+					}
+					span{
+						position: absolute;
+    					right: 10px;
+   					 	margin-top: 5px;
+						.check{
+							display: inline-block;
+							position: relative;
+	    					width: 16px;
+	    					height: 16px;
+	    					left: 5px;
+	    					top: 2px;
+	    					cursor: pointer;
+	    					&::before{
+	    						color: $mainColor;
+							    bottom: -6px;
+							    position: absolute;
+							    left: -5px;
+	    					}
+						}
+					}
+					.job_res{
+						position: static;
+					}
+			}
+			.culc_clear{
+				width: 100px;
+				margin: 0 auto;
+				cursor: pointer;
+				font-size: 15px;
+				text-transform: uppercase;
+				height: 15px;
+				font-family: "BebasBold";
+				letter-spacing: 2px;
+				border-radius: 5px;
+			}
+
+		}
+			.culc_menu_open{
+					height: 290px;
+				}
+				
+				.culc_button_open{
+
+					transform: rotate(-180deg);
 				}
 				
 			}
-			.culc_result,.culc_info{
-				top: 40px;
-				position: relative;
-				right: 50px;
-				font-size: 22px;
-				}
+			.culc_result{
+				margin-bottom: 30px;
+				font-size: 20px;
+			}
+
 			.culc_info{
-				top: 100px;
-				right: -20px;
+				margin: 30px auto;
+				width: 300px;
+				text-align: center;
+				font-size: 20px;
+				z-index: 0;
 			}
 			.contacts_form_wrap{
-				display: flex;
-				flex-direction: column;
-				margin: 0 auto;
+				margin: 20px auto;
 				width: 300px;
 				input,textarea{
 					padding-left: 20px;
+					font-family: $extraFontLight;
 					border-radius: 25px;
 					border: none;
 					height: 36px;
+					font-size: 16px;
 					margin-bottom: 25px;
+					font-weight: 900;
+					width: 300px;
 					&:focus{
     					outline: none;
 					}
@@ -161,15 +263,14 @@
 					height: 25px;
 					box-sizing: content-box;
 					transition: 0.1s;
+					cursor: pointer;
 					&:focus{
 						outline: none;
-					}
-					&:hover{
-						background-color:$mainColor;
 					}
 
 				}
 			}
+		
 		}
 	}
 	h3{
@@ -180,15 +281,15 @@
 		}
 }
 
-
-.content_services_cat_inside ul,.content_contacts_culc{
-	position: relative;
-	&:before{
-		content: '';
-		width: 0;
-		height: 100%;
-		position: absolute;
-		right: 0;
-		border: 1px solid;
-		}
+.line{
+	border-right: 1px solid;
 }
+
+
+.content_contacts_culc,.content_contacts_form{
+    margin: 75px;
+}
+
+
+
+

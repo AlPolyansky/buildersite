@@ -1,96 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/main.css">
-<title>Builder Site</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Builder Site</title>
 </head>
 <body>
 
 
 <div class="wrapper">
 	<header id="header">
-			<div class="header_site_name">
-				<h1><a href="#">alex popov</a></h1>
+					<nav class="mobile_menu_wrap" data-open="1">
+						<ul>
+							<li><a href="#about" class="active" data-target="about">О себе</a></li>
+							<li><a href="#services" data-target="services">Услуги</a></li>
+							<li><a href="#contacts" data-target="contacts">Контакты</a></li>
+						</ul>
+					</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4 col-lg-2">
+					<div class="header_site_name" >
+					<h1><a href="#">alex popov</a></h1>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<nav class="header_menu">
+						<ul>
+							<li><a href="#about" class="active" data-target="about">О себе</a></li>
+							<li><a href="#services" data-target="services">Услуги</a></li>
+							<li><a href="#contacts" data-target="contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xs-4 col-lg-2">
+					<div class="header_number">
+						<address>+7 902 199 99 99</address>
+						<address class="city">г.Архангельск</address>
+
+					</div>
+				</div>
+						<div class="col-xs-4 col-lg-0">
+					<div class="mobile_button">
+						<div class="button_wrap">
+							<div class="top_line"></div>
+							<div class="down_line"></div>
+						</div>
+					</div>
+				</div> 
 			</div>
-			<nav class="header_menu">
-				<ul>
-					<li><a href="#">О себе</a></li>
-					<li><a href="#0">Услуги</a></li>
-					<li><a href="#1">Контакты</a></li>
-					<li><a href="#1">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="header_number">
-				<address>+7 902 199 99 99</address>
-			</div>
+		</div>
 	</header>
 	<div id="content">
-		<section class="content_about" data-parallax="scroll" data-image-src="img/room_1.jpg">
-			<div class="content_about_cloth">
+		<section class="content_about" id="about">
+			<div class="content_about_cloth" >
 				<div class="content_about_cloth_centered">
-					<h2>О себе</h2>
+					<h2 data-target="about">О себе</h2>
 					<p> О себе - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
 				</div>
 			</div>
 		</section>
-		<section class="content_services">
-			<h2>Услуги</h2>
+		<section class="content_services" id="services">
+			<h2 data-target="services">Услуги</h2>
+			
 			<div class="content_services_cat">
-				<div class="content_services_cat_inside_wrap">
-					<div class="content_services_cat_inside">
-						<h3>Внутренняя отделка</h3>
-						<ul>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-						</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 line">
+						<div class="content_services_cat_inside">
+							<i class="icons i_color"></i>
+							<h3>Внешняя отделка</h3>
+							<ul>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="content_services_cat_inside_wrap">
-					<div class="content_services_cat_outside">
-						<h3>Внешняя отделка</h3>
-						<ul>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-							<li>Ленточные работы</li>
-						</ul>
+					<div class="col-lg-6">
+						<div class="content_services_cat_outside">
+							<i class="icons i_helmet"></i>
+							<h3>Внутренняя отделка</h3>
+							<ul>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+								<li>Ленточные работы</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+				
+				
+			</div>
 		</section>
-		<section class="content_contacts" data-parallax="scroll" data-image-src="img/room_2.jpg">
+		<section class="content_contacts" id="contacts">
 			<div class="content_contacts_cloth">
-				<h2>Контакты</h2>
+				<h2 data-target="contacts">Контакты</h2>
 				<div class="content_contacts_wrap">
-					<div class="content_contacts_culc">
-						<h3>Стоимость услуг</h3>
-						<div class="culc_form">
-							<span class="culc_name">Работа</span>
-							<span class="culc_button"></span>
-						</div>
-						<div class="culc_result">
-							<p>Итого: 12000 руб.</p>
-						</div>
-						<div class="culc_info">
-							<p>*цена указана без учета материалов</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 line">
+							<div class="content_contacts_culc">
+								<h3>Стоимость услуг</h3>
+								<div class="culc_result">
+									<p>Цена: <span>0</span> руб.</p>
+								</div>
+								<div class="culc_wrap">
+									<div class="culc_form">
+									<div class="culc_name">Наши цены</div>
+										<span class="culc_button"></span>
+									</div>
+									<div class="culc_menu">
+										<div class="culc_job_wrap" id="mcs_container">
+											<div class="culc_job">
+											<p>Ленточные работработы</p>
+											<span><span class="job_res">235</span> руб<i class="check icons" ></i></span>
+											</div>
+											<div class="culc_job">
+												<p>Ленточные работработы</p>
+												<span><span class="job_res">235</span> руб<i class="check icons" ></i></span>
+											</div>
+											<div class="culc_job">
+												<p>Ленточные работработы</p>
+												<span><span class="job_res">235</span> руб<i class="check icons" ></i></span>
+											</div>
+											<div class="culc_job">
+												<p>Ленточные работработы</p>
+												<span><span class="job_res">235</span> руб<i class="check icons" ></i></span>
+											</div>
+										</div>
+										<div class="culc_clear">очистить</div>
+									</div>
+			
+								</div>
+								<div class="culc_info">
+									<p>*цена указана без учета материалов</p>
+								</div>
+							</div></div>
+						<div class="col-lg-6">
+							<div class="content_contacts_form">
+								<h3>Отправьте нам сообщение</h3>
+								<div class="contacts_form_wrap">
+									<input type="text" placeholder="Ваше имя">
+									<input type="text" placeholder="Ваш e-mail">
+									<textarea placeholder="Ваше сообщение"></textarea>
+									<button>отправить</button>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="content_contacts_form">
-						<h3>Отправьте нам сообщение</h3>
-						<div class="contacts_form_wrap">
-							<input type="text" placeholder="Ваше имя">
-							<input type="text" placeholder="Ваш e-mail">
-							<textarea placeholder="Ваше сообщение"></textarea>
-							<button>отправить</button>
-						</div>
-					</div>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -99,10 +165,9 @@
 		<div class="footer_menu">
 			<nav>
 				<ul>
-					<li><a href="#">О себе</a></li>
-					<li><a href="#0">Услуги</a></li>
-					<li><a href="#1">Контакты</a></li>
-					<li><a href="#1">Контакты</a></li>
+					<li><a href="#about">О себе</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -112,8 +177,8 @@
 			<address>г.Архангельск</address>
 		</div>
 		<div class="footer_social">
-			<address><a href="#">Вконтакте</a></address>
-			<address><a href="#">Одноклассники</a></address>
+			<address><a href="#"><i class="icons i_vk"></i></a></address>
+			<address><a href="#"><i class="icons i_od"></i></a></address>
 		</div>
 	</footer>
 </div>
@@ -124,7 +189,9 @@
 
 <script src="libs/jQuery/jquery-2.2.1.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="libs/parallax/parallax.min.js"></script>
+<script src="libs/customScrollbar/customScrollbar.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/animateCss/animate-css.js"></script>
 <script src="js/common.js"></script>	
 </body>
 </html>

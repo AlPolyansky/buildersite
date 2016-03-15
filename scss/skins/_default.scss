@@ -2,6 +2,7 @@
 
 $mainColor : #333333;
 $bgColor: #fff;
+$checkColor: #00B9EE;
 
 
 #header{
@@ -50,19 +51,58 @@ section{
 }
 
 input,textarea{
-	color: darken($mainColor,20%);
+	color: lighten($mainColor,10%);
 }
 button{
 	background-color: lighten($mainColor,10%);
+	color:$bgColor;
 	&:hover{
 		background-color:$mainColor;
 	}
 }
 
-#footer{
-	font-family: $mainFont;
+body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .culc_button_open{
+	border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 14px solid $bgColor;
+}
+
+.culc_form_content{
+	color:$bgColor;
+}
+
+.culc_form_open{
+	background-color: rgba(darken($mainColor,10%), $Opacity + 0.16);
+}
+
+.culc_job{
+	border-bottom: 1px solid $bgColor;
+}
+
+.check{
+	background-color: $bgColor;
+	border: 1px solid $bgColor;
+}
+.check_active{
+	border: 1px solid lighten($checkColor,10%);
+	background-color: $checkColor;
+
+}
+
+.culc_clear{
+	background: $bgColor;
+	color: $mainColor;
+}
+
+
+#footer,#footer a{
+	font-family: $extraFont;
 	background-color: $mainColor;
 	color: $bgColor;
+}
+
+#footer .footer_menu a:hover{
+	border-bottom: 1px solid $bgColor;
 }
 
 

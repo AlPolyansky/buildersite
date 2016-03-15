@@ -1,20 +1,28 @@
+body{
+	min-width: 460px;
+}
+
 #header{
 	letter-spacing:$headerKerning;
 	font-size: $headerFontSize;
 	text-transform: uppercase;
-	display: flex;
-	flex-direction: row;
 	justify-content:space-around;
-	flex-wrap:wrap;
 	position: fixed;
-	z-index: 100;
+	z-index: 1000;
+	backface-visibility: hidden;
+	display: inline-block;
 	width: $totalWidht + 0%;
+	min-width: 460px;
+	
+	
 	div{
 		line-height: $headerHeight;
 		text-align: center;
+		margin: 0;
+		padding: 0;
+
 	}
 	.header_site_name{
-		flex-basis: 200px;
 		h1{
 			height: 100%;
 		}
@@ -26,6 +34,10 @@
 			justify-content:center;
 			align-items: center;
 			li{
+				.active{
+					transition: all .25s;
+					border-bottom: 1px solid $bgColor;
+				}
 				line-height: $headerHeight;
 				a{
 					padding: 5px 0;
@@ -36,18 +48,35 @@
 					transition: all .25s;
 					border-bottom: 1px solid $bgColor;
 				}
+				&:focus{
+					outline: none;
+				}
+
 				}
 			}
 		} 
 	}
+	.mobile_button{
+		display: none;
+	}
+	.mobile_menu_wrap{
+		display: none;
+	}
 	.header_number{
 		address{
-			display: inline;
-			width: 200px;
+			height: 20px;
+			
+		}
+		.city{
+			font-size: 14px;
+			height: 0;
+
 		}
 
 	}
+
 }
+
 
 
 

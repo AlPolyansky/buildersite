@@ -1,5 +1,6 @@
 #footer{
 	height: $footerHeight;
+	font-family: $extraFont;
 	display:flex;
 	justify-content:space-around;
 	font-size: 20px;
@@ -19,6 +20,16 @@
 
 	.footer_menu{
 		text-align: left;
+		
+		a{
+			transition: all .25s;
+			text-transform: uppercase;
+			border-bottom: transparent 1px solid;
+			&:hover{
+				transition: all .25s;
+			}
+		}
+		
 	}
 	.footer_social{
 		text-align: right;
@@ -26,6 +37,7 @@
 
 	h4{
 		font-size: 25px;
-		margin-bottom: 50px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
 	}
 }

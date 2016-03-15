@@ -1,0 +1,32 @@
+.icons{
+	font-family: "BuilderIcons";
+	font-size: 32px;
+	display: inline-block;
+	font-style: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.i_color::before{
+	content: 'a';
+}
+
+.i_helmet::before{
+	content: 'b';
+}
+
+.i_vk::before{
+	content: 'c';
+}
+
+.i_od::before{
+	content: 'd';
+}
+
+.i_mark::before{
+	content: 'e';
+}
+
+
