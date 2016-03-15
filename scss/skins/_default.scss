@@ -3,6 +3,7 @@
 $mainColor : #333333;
 $bgColor: #fff;
 $checkColor: #00B9EE;
+$errorColor: #EC4B4B;
 
 
 #header{
@@ -103,6 +104,10 @@ body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .cu
 
 #footer .footer_menu a:hover{
 	border-bottom: 1px solid $bgColor;
+}
+
+.inputError{
+	border-color: $errorColor !important;
 }
 
 

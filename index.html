@@ -148,9 +148,20 @@
 							<div class="content_contacts_form">
 								<h3>Отправьте нам сообщение</h3>
 								<div class="contacts_form_wrap">
-									<input type="text" placeholder="Ваше имя">
-									<input type="text" placeholder="Ваш e-mail">
-									<textarea placeholder="Ваше сообщение"></textarea>
+									<div class="input_wrap">
+										<input type="text" placeholder="Ваше имя" id="name">
+										<span class="error_form"></span>
+									</div>
+									<div class="input_wrap">
+										<input type="text" placeholder="Ваш e-mail" id="email">
+										<span class="error_form"></span>
+									</div>
+									<div class="input_wrap">
+										<textarea placeholder="Ваше сообщение" id="text"></textarea>
+										<span class="error_form"></span>
+									</div>
+									
+									
 									<button>отправить</button>
 								</div>
 							</div>
