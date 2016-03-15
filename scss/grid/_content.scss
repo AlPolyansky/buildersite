@@ -5,6 +5,35 @@
 
 }
 
+.loader_wrap{
+	background: none repeat scroll 0 0 $mainColor;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	text-align: center;
+	.loader{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		height: 96px;
+		width: 96px;
+		animation: rotate  2s infinite ease-in-out;
+	}
+	@keyframes rotate {
+  		0% { transform: rotate(0deg) }
+  		20% { transform: rotate(-45deg) }
+  		100% { transform: rotate(360deg) }
+	}
+}
+
 .mobile_menu_wrap{
 			text-transform: uppercase;
 			font-family: $mainFont;

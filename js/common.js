@@ -290,6 +290,11 @@ function ajaxForm(){
 		}
 	})
 
+	$(window).load(function(){
+		$(".loader_wrap").fadeOut(400);
+		$(".loader").delay(400).fadeOut("slow");
+	})
+
 
 
 })
