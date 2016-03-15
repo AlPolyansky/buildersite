@@ -139,8 +139,6 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -191,8 +189,6 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -202,8 +198,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -234,14 +228,10 @@ th {
   padding: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -298,7 +288,6 @@ img {
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1134,8 +1123,6 @@ a, a:focus, a:active, a:hover, a:visited {
   width: 2px;
   height: 100%;
   margin: 0 auto;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   border-radius: 16px; }
 
 .mCSB_scrollTools .mCSB_dragger {
@@ -1149,8 +1136,6 @@ a, a:focus, a:active, a:hover, a:visited {
   width: 4px;
   height: 100%;
   margin: 0 auto;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   border-radius: 16px;
   text-align: center; }
 
@@ -1249,8 +1234,6 @@ a, a:focus, a:active, a:hover, a:visited {
 .mCSB_container_wrapper > .mCSB_container {
   padding-right: 30px;
   padding-bottom: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
@@ -1290,14 +1273,10 @@ a, a:focus, a:active, a:hover, a:visited {
 
 .mCSB_scrollTools, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   -webkit-transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
-  -o-transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
   transition: opacity .2s ease-in-out,background-color .2s ease-in-out; }
 
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail, .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar, .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail, .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar {
   -webkit-transition: width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out;
-  -moz-transition: width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out;
-  -o-transition: width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out;
   transition: width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out; }
 
 .mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools, .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
@@ -1393,16 +1372,12 @@ a, a:focus, a:active, a:hover, a:visited {
   width: 4px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
   border-radius: 1px; }
 
 .mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   width: 4px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.75);
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
   border-radius: 1px; }
 
 .mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_draggerRail, .mCS-light-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-light-2.mCSB_scrollTools_horizontal .mCSB_draggerRail {
@@ -1433,15 +1408,11 @@ a, a:focus, a:active, a:hover, a:visited {
 .mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
   border-radius: 1px; }
 
 .mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
   border-radius: 1px; }
 
 .mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
@@ -1468,16 +1439,12 @@ a, a:focus, a:active, a:hover, a:visited {
   width: 4px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px; }
 
 .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   width: 6px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.75);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px; }
 
 .mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail, .mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail {
@@ -1513,15 +1480,11 @@ a, a:focus, a:active, a:hover, a:visited {
 .mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px; }
 
 .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px; }
 
 .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
@@ -1710,20 +1673,14 @@ a, a:focus, a:active, a:hover, a:visited {
 
 .mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-repeat: repeat-y;
-  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
-  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%); }
 
 .mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
   background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%); }
 
 .mCS-3d-dark.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-3d.mCSB_scrollTools_vertical .mCSB_dragger {
@@ -1738,8 +1695,6 @@ a, a:focus, a:active, a:hover, a:visited {
   -ms-filter: "alpha(opacity=30)"; }
 
 .mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail, .mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d.mCSB_scrollTools .mCSB_draggerRail {
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   border-radius: 16px; }
 
 .mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail, .mCS-3d.mCSB_scrollTools .mCSB_draggerRail {
@@ -1803,8 +1758,6 @@ a, a:focus, a:active, a:hover, a:visited {
   -ms-filter: "alpha(opacity=30)"; }
 
 .mCS-3d-thick-dark.mCSB_scrollTools, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer, .mCS-3d-thick.mCSB_scrollTools, .mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   border-radius: 7px; }
 
 .mCSB_inside + .mCS-3d-thick-dark.mCSB_scrollTools_vertical, .mCSB_inside + .mCS-3d-thick.mCSB_scrollTools_vertical {
@@ -1818,8 +1771,6 @@ a, a:focus, a:active, a:hover, a:visited {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5); }
 
 .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4);
   width: 12px;
@@ -2072,8 +2023,6 @@ a, a:focus, a:active, a:hover, a:visited {
   border-style: solid;
   border-color: #fff;
   border-color: rgba(255, 255, 255, 0.2);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
@@ -2182,7 +2131,8 @@ a, a:focus, a:active, a:hover, a:visited {
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-transform-origin: center bottom;
-  transform-origin: center bottom; }
+  -ms-transform-origin: center bottom;
+      transform-origin: center bottom; }
 
 @-webkit-keyframes flash {
   from, 50%, to {
@@ -2373,7 +2323,8 @@ a, a:focus, a:active, a:hover, a:visited {
     transform: rotate3d(0, 0, 1, 0deg); } }
 .swing {
   -webkit-transform-origin: top center;
-  transform-origin: top center;
+  -ms-transform-origin: top center;
+      transform-origin: top center;
   -webkit-animation-name: swing;
   animation-name: swing; }
 
@@ -2516,7 +2467,8 @@ a, a:focus, a:active, a:hover, a:visited {
   -webkit-animation-name: jello;
   animation-name: jello;
   -webkit-transform-origin: center;
-  transform-origin: center; }
+  -ms-transform-origin: center;
+      transform-origin: center; }
 
 @-webkit-keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
@@ -4349,18 +4301,24 @@ a, a:focus, a:active, a:hover, a:visited {
           width: 20px; }
         body #header .mobile_button .button_wrap .top_line {
           top: 14px;
-          transition: .7s;
+          -webkit-transition: .7s;
+                  transition: .7s;
           left: 10px; }
         body #header .mobile_button .button_wrap .down_line {
-          transition: .7s;
+          -webkit-transition: .7s;
+                  transition: .7s;
           left: 10px;
           top: 23px; }
         body #header .mobile_button .button_wrap .top_line_open {
           top: 19px;
-          transform: rotate(225deg); }
+          -webkit-transform: rotate(225deg);
+              -ms-transform: rotate(225deg);
+                  transform: rotate(225deg); }
         body #header .mobile_button .button_wrap .down_line_open {
           top: 19px;
-          transform: rotate(-225deg); }
+          -webkit-transform: rotate(-225deg);
+              -ms-transform: rotate(-225deg);
+                  transform: rotate(-225deg); }
     body #header .mobile_menu_wrap {
       width: 100%;
       position: absolute;
@@ -4391,6 +4349,21 @@ a, a:focus, a:active, a:hover, a:visited {
 
   body #content #contacts .content_contacts_form {
     margin-top: 200px; } }
+@media only screen and (max-width: 767px) {
+  body #header {
+    font-size: 12px; }
+    body #header div {
+      line-height: 40px; }
+    body #header .mobile_button .button_wrap {
+      background-color: #cccccc;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 40px;
+      left: 50px;
+      margin: 25px auto;
+      position: relative;
+      top: -14px;
+      width: 40px; } }
 /* size */
 /* header*/
 /*content*/
@@ -4504,20 +4477,19 @@ body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .cu
 .inputError {
   border-color: #EC4B4B !important; }
 
-body {
-  min-width: 460px; }
-
 #header {
   letter-spacing: 1px;
   font-size: 18px;
   text-transform: uppercase;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   position: fixed;
   z-index: 1000;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   display: inline-block;
-  width: 100%;
-  min-width: 460px; }
+  width: 100%; }
   #header div {
     line-height: 80px;
     text-align: center;
@@ -4526,22 +4498,38 @@ body {
   #header .header_site_name h1 {
     height: 100%; }
   #header .header_menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     #header .header_menu ul li {
       line-height: 80px; }
       #header .header_menu ul li .active {
-        transition: all .25s;
+        -webkit-transition: all .25s;
+                transition: all .25s;
         border-bottom: 1px solid #fff; }
       #header .header_menu ul li a {
         padding: 5px 0;
         margin: 0 10px;
-        transition: all .25s;
+        -webkit-transition: all .25s;
+                transition: all .25s;
         border-bottom: transparent 1px solid; }
         #header .header_menu ul li a:hover {
-          transition: all .25s;
+          -webkit-transition: all .25s;
+                  transition: all .25s;
           border-bottom: 1px solid #fff; }
         #header .header_menu ul li a:focus {
           outline: none; }
@@ -4568,6 +4556,7 @@ body {
       margin: 50px 0;
       text-transform: uppercase; }
   #content .content_about {
+    height: 768px;
     background-repeat: no-repeat;
     background-position: center 0;
     position: relative;
@@ -4575,9 +4564,11 @@ body {
     background-image: url("../img/room_1_1.jpg");
     z-index: 2;
     width: 100%;
-    transition: background-position .8s ease-out;
+    -webkit-transition: background-position .8s ease-out;
+            transition: background-position .8s ease-out;
     background-attachment: fixed;
-    display: table; }
+    display: table;
+    table-layout: fixed; }
     #content .content_about .content_about_cloth {
       width: 100%;
       height: 100%;
@@ -4602,8 +4593,6 @@ body {
       font-size: 35px; }
     #content .content_services .content_services_cat {
       text-align: center; }
-      #content .content_services .content_services_cat .content_services_cat_inside, #content .content_services .content_services_cat .content_services_cat_outside {
-        padding: 80px 0; }
       #content .content_services .content_services_cat ul {
         margin-top: 60px; }
         #content .content_services .content_services_cat ul li {
@@ -4617,7 +4606,8 @@ body {
     position: relative;
     background-image: url("../img/102H-min-1.jpg");
     z-index: 2;
-    transition: background-position .7s ease-out;
+    -webkit-transition: background-position .7s ease-out;
+            transition: background-position .7s ease-out;
     display: table;
     width: 100%; }
     #content .content_contacts .content_contacts_cloth {
@@ -4645,7 +4635,8 @@ body {
           height: 36px;
           text-align: left;
           position: relative;
-          transition: 1s;
+          -webkit-transition: 1s;
+                  transition: 1s;
           cursor: pointer; }
           #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .culc_name {
             padding-left: 20px; }
@@ -4662,7 +4653,8 @@ body {
             border-right: 7px solid transparent;
             border-top: 14px solid;
             z-index: 4;
-            transition: 0.5s; }
+            -webkit-transition: 0.5s;
+                    transition: 0.5s; }
         #content .content_contacts .content_contacts_wrap .culc_wrap .culc_menu {
           background-color: #333333;
           width: 300px;
@@ -4674,7 +4666,8 @@ body {
           right: 0;
           left: 0;
           margin: 0 auto;
-          transition: 1s;
+          -webkit-transition: 1s;
+                  transition: 1s;
           z-index: 3;
           overflow: hidden; }
           #content .content_contacts .content_contacts_wrap .culc_wrap .culc_menu .culc_job_wrap {
@@ -4723,7 +4716,9 @@ body {
         #content .content_contacts .content_contacts_wrap .culc_wrap .culc_menu_open {
           height: 290px; }
         #content .content_contacts .content_contacts_wrap .culc_wrap .culc_button_open {
-          transform: rotate(-180deg); }
+          -webkit-transform: rotate(-180deg);
+              -ms-transform: rotate(-180deg);
+                  transform: rotate(-180deg); }
       #content .content_contacts .content_contacts_wrap .culc_result {
         margin-bottom: 30px;
         font-size: 20px; }
@@ -4746,7 +4741,8 @@ body {
           font-weight: 900;
           width: 300px;
           border: 3px solid #fff;
-          transition: .5s; }
+          -webkit-transition: .5s;
+                  transition: .5s; }
           #content .content_contacts .content_contacts_wrap .contacts_form_wrap input:focus, #content .content_contacts .content_contacts_wrap .contacts_form_wrap textarea:focus {
             outline: none; }
         #content .content_contacts .content_contacts_wrap .contacts_form_wrap textarea {
@@ -4769,7 +4765,8 @@ body {
           margin: 0 auto;
           height: 25px;
           box-sizing: content-box;
-          transition: 0.1s;
+          -webkit-transition: 0.1s;
+                  transition: 0.1s;
           cursor: pointer; }
           #content .content_contacts .content_contacts_wrap .contacts_form_wrap button:focus {
             outline: none; }
@@ -4781,14 +4778,16 @@ body {
 .line {
   border-right: 1px solid; }
 
-.content_contacts_culc, .content_contacts_form {
-  margin: 75px; }
-
 #footer {
   height: 200px;
   font-family: "ClearSans";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   font-size: 20px; }
   #footer li, #footer address, #footer address a {
     padding: 10px; }
@@ -4799,11 +4798,13 @@ body {
   #footer .footer_menu {
     text-align: left; }
     #footer .footer_menu a {
-      transition: all .25s;
+      -webkit-transition: all .25s;
+              transition: all .25s;
       text-transform: uppercase;
       border-bottom: transparent 1px solid; }
       #footer .footer_menu a:hover {
-        transition: all .25s; }
+        -webkit-transition: all .25s;
+                transition: all .25s; }
   #footer .footer_social {
     text-align: right; }
   #footer h4 {
