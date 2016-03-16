@@ -40,18 +40,55 @@
 			width: 100%;
     		position: fixed;
 		    margin: 0 auto;
-		    background-color: rgba(#333,.95);
+		    background-color: rgba($mainColor,.95);
 		    text-align: center;
 		    top: 80px;
 		    display: none;
 		    z-index: 1000;
 		    li{
-		    	padding: 20px;
+		    	cursor: pointer;
 		    	a{
+		    		padding: 20px;
 		    		display: block;
+
 		    	}
 		    }
 		}
+
+
+#ie{
+	background: none repeat scroll 0 0 $mainColor;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	z-index: 1000000;
+	text-align: center;
+	display: none;
+	p{
+		color: $bgColor;
+		position: absolute;
+		top: 50%;
+		font-size: 20px;
+		left: 50%;
+		height: 30%;
+		width: 50%;
+		margin: -15% 0 0 -25%;
+		a{
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+
+
+
 
 
 
@@ -75,6 +112,7 @@
 			z-index: 2;
 			width: 100%;
 			transition:background-position .8s ease-out;
+			-ms-transition: background-position .8s ease-out;
 			background-attachment: fixed;
 			display: table;
 			table-layout: fixed;
@@ -134,6 +172,7 @@
 		background-image: url("../img/102H-min-1.jpg");
 		z-index: 2;
 		transition:background-position .7s ease-out;
+		-ms-transition:background-position .7s ease-out;
 		display: table;
 		width: 100%;
 		.content_contacts_cloth{
@@ -159,7 +198,7 @@
 				z-index: 4;
 				text-transform: uppercase;
 				display: inline-block;
-				background-color: $bgColor;
+				background-color: #fff;
 				color: $mainColor;
 				padding: 10px;
 				border-radius: 25px;

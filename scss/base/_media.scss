@@ -12,7 +12,6 @@
 			    margin: 0 auto;
 			    text-align: center;
 			.button_wrap{
-				background-color: lighten(#333333,60%);
     			height: 40px;
 			    width: 40px;
 			    position: relative;
@@ -21,7 +20,6 @@
 			    margin: 0 auto;
 
 			    .top_line,.down_line{
-			    	background-color: #333;
     				height: 3px;
 				    position: absolute;
 				    width: 20px;
@@ -86,7 +84,6 @@
 			padding: 20px 0;
 		}
 		.mobile_button .button_wrap{
-			    background-color: #cccccc;
 			    border-radius: 50%;
 			    cursor: pointer;
 			    height: 40px;
@@ -96,4 +93,20 @@
 
 		 
 	}
+
+	body #footer .footer_social{
+		text-align: center;
+		address{
+			display: inline-block;
+		}
+	}
+
+	body #footer .footer_menu{
+		text-align: center;
+		li{
+			display: inline-block;
+		}
+	}
+
+	
 }

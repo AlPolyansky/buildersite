@@ -5,10 +5,20 @@
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 	<title>Builder Site</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+	<!--[if IE]>
+		<style type="text/css">
+		.content_about,.content_contacts{background-attachment: scroll!important;}
+		.loader_wrap{display:none!important;}
+		</style>
+	<![endif]-->
+
+
 </head>
 <body>
-
+<div id="ie"><p>Пожайлуста, обновите <a href="https://www.google.ru/chrome/browser/desktop/">браузер</a></p></div>
 <div class="loader_wrap">
+
 	<div class="loader">
 		<svg version="1.1" id="cog1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="96px" height="96px" viewBox="0 0 96 96" enable-background="new 0 0 96 96" xml:space="preserve">
@@ -35,7 +45,7 @@
 		</svg>
 	</div>
 </div>
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 
 	<header id="header">
 					<div class="header_site_name" >
@@ -190,36 +200,62 @@
 		</section>
 	</div>
 	<footer id="footer">
-		<div class="footer_menu">
-			<nav>
-				<ul>
-					<li><a href="#about">О себе</a></li>
-					<li><a href="#services">Услуги</a></li>
-					<li><a href="#contacts">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="footer_contacts">
-			<h4>Наш телефон</h4>
-			<address>+7 902 199 99 99</address>
-			<address>г.Архангельск</address>
-		</div>
-		<div class="footer_social">
-			<address><a href="#"><i class="icons i_vk"></i></a></address>
-			<address><a href="#"><i class="icons i_od"></i></a></address>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="footer_menu">
+						<nav>
+							<ul>
+								<li><a href="#about">О себе</a></li>
+								<li><a href="#services">Услуги</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="footer_contacts">
+						<h4>Наш телефон</h4>
+						<address>+7 902 199 99 99</address>
+						<address>г.Архангельск</address>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="footer_social">
+						<address><a href="#"><i class="icons i_vk"></i></a></address>
+						<address><a href="#"><i class="icons i_od"></i></a></address>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 </div>
 
 
 
+<!--[if IE]><![if gte IE 9]><![endif]-->
+	<script src="libs/jQuery/jquery-2.2.1.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/customScrollbar/customScrollbar.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animateCss/animate-css.js"></script>
+	<script src="js/common.js"></script>
+<!--[if IE]><![endif]><![endif]-->
+<!--[if lte IE 8]>
+	<script src="js/ie.js"></script>
+<![endif]-->
 
 
-<script src="libs/jQuery/jquery-2.2.1.min.js"></script>
-<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="libs/customScrollbar/customScrollbar.min.js"></script>
-<script src="libs/waypoints/waypoints.min.js"></script>
-<script src="libs/animateCss/animate-css.js"></script>
-<script src="js/common.js"></script>	
+
+
 </body>
 </html>
+
+
+
+<!-- <FilesMatch "\.(htm|html|php)$">
+    <IfModule mod_headers.c>
+        BrowserMatch MSIE ie
+        Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+    </IfModule>
+</FilesMatch> -->

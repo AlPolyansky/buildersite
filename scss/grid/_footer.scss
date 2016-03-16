@@ -1,9 +1,16 @@
 #footer{
-	height: $footerHeight;
+	//height: $footerHeight;
 	font-family: $extraFont;
-	display:flex;
-	justify-content:space-around;
 	font-size: 20px;
+	background-color: $mainColor;
+	clear:both;
+	&:after,&:before{
+		content: "";
+    	display: table;
+	}
+	&:after{
+		clear: both;
+	}
 	
 	li,address, address a{
 		padding: 10px;

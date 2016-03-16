@@ -1,7 +1,7 @@
 /* color */
 
 $mainColor : #333333;
-$bgColor: #fff;
+$bgColor: #ffffff;
 $checkColor: #00B9EE;
 $errorColor: #EC4B4B;
 
@@ -98,7 +98,6 @@ body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .cu
 
 #footer,#footer a{
 	font-family: $extraFont;
-	background-color: $mainColor;
 	color: $bgColor;
 }
 
@@ -108,6 +107,14 @@ body #content .content_contacts .content_contacts_wrap .culc_wrap .culc_form .cu
 
 .inputError{
 	border-color: $errorColor !important;
+}
+
+.mobile_button .button_wrap{
+	background-color: lighten($mainColor,60%);
+}
+
+.top_line,.down_line{
+	background-color: $mainColor;
 }
 
 

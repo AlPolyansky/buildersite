@@ -53,9 +53,6 @@ body{
 	.mobile_button{
 		display: none;
 	}
-	.mobile_menu_wrap{
-		
-	}
 	.header_number{
 		width: 20%;
 		address{
@@ -80,19 +77,5 @@ body{
 	vertical-align: middle;
 }
 
-.mobile_menu_wrap{
-			width: 100%;
-    		position: absolute;
-		    margin: 0 auto;
-		    background-color: rgba(#333,.95);
-		    text-align: center;
-		    top: 80px;
-		    li{
-		    	padding: 20px;
-		    	a{
-		    		display: block;
-		    	}
-		    }
-		}
 
 
